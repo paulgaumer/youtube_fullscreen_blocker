@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Fullscreen Blocker",
+  "version": "1.0",
+  "description": "Prevents switching to fullscreen when double-clicking on the YouTube player",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
